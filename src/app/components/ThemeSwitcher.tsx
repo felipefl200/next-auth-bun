@@ -2,8 +2,7 @@
 import { Switch } from "@nextui-org/react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { Sun, Moon, Computer } from "./Icons";
-import { type } from "os";
+import { Icons } from "./Icons";
 
 type ThemeSwitcherProps = {
   suppressWord?: Boolean;
@@ -35,8 +34,8 @@ export function ThemeSwitcher({ suppressWord = false }: ThemeSwitcherProps) {
       onValueChange={onChangeTheme}
       size="lg"
       color="warning"
-      startContent={<Sun />}
-      endContent={theme === "system" ? <Computer /> : <Moon />}
+      startContent={<Icons.sun />}
+      endContent={theme === "system" ? <Icons.computer /> : <Icons.moon />}
     >
       {!suppressWord && (
         <>

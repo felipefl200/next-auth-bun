@@ -2,19 +2,18 @@ import {
   Navbar,
   NavbarBrand,
   NavbarContent,
-  NavbarItem,
-  Link,
-  Button,
+  NavbarItem 
 } from "@nextui-org/react";
-import { LinuxLogo } from "./Icons";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { SignInButton } from "./SignInButton";
+import { LogInButton } from "./LogInButton";
+import { Icons } from "./Icons";
 
 export function NavBar() {
   return (
     <Navbar shouldHideOnScroll>
       <NavbarBrand>
-        <LinuxLogo className="w-8 h-8" />
+        <Icons.linuxLogo className="w-8 h-8" />
         <p className="font-bold text-inherit">ACME</p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
@@ -27,7 +26,7 @@ export function NavBar() {
           <ThemeSwitcher suppressWord />
         </NavbarItem>
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Entrar</Link>
+          <LogInButton />
         </NavbarItem>
         <NavbarItem>
           <SignInButton />
