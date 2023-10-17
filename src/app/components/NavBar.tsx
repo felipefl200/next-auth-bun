@@ -8,6 +8,7 @@ import {
 } from "@nextui-org/react";
 import { LinuxLogo } from "./Icons";
 import { ThemeSwitcher } from "./ThemeSwitcher";
+import { SignInButton } from "./SignInButton";
 
 export function NavBar() {
   return (
@@ -18,9 +19,7 @@ export function NavBar() {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="primary" href="#">
-            NextAuth
-          </Link>
+          <p className="text-blue-500">NextAuth</p>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
@@ -31,9 +30,7 @@ export function NavBar() {
           <Link href="#">Entrar</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Cadastrar
-          </Button>
+          <SignInButton />
         </NavbarItem>
       </NavbarContent>
     </Navbar>
