@@ -1,0 +1,9 @@
+### Criar usuário
+POST http://localhost:3000/api/user
+Content-Type: application/json
+
+{
+    "name": "Felipe França",
+    "email": "felipefl200@gmail.com",
+    "password": "password"
+}
