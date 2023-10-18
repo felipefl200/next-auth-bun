@@ -10,9 +10,9 @@ import {
   Checkbox,
   Input,
   Link,
-  Divider,
 } from "@nextui-org/react";
 import { Icons } from "./Icons";
+import { signIn } from "next-auth/react";
 
 export function LogInButton() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -88,7 +88,10 @@ export function LogInButton() {
                 <Button color="danger" variant="flat" onPress={onClose}>
                   Fechar
                 </Button>
-                <Button color="primary" onPress={onClose}>
+                <Button
+                  onClick={() => signIn()}
+                  color="primary"                  
+                >
                   Entrar
                 </Button>
               </ModalFooter>

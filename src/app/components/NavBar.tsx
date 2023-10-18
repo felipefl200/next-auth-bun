@@ -5,7 +5,7 @@ import {
   NavbarItem 
 } from "@nextui-org/react";
 import { ThemeSwitcher } from "./ThemeSwitcher";
-import { SignInButton } from "./SignInButton";
+import { NewAccountButton } from "./NewAccountButton";
 import { LogInButton } from "./LogInButton";
 import { Icons } from "./Icons";
 
@@ -29,7 +29,7 @@ export function NavBar() {
           <LogInButton />
         </NavbarItem>
         <NavbarItem>
-          <SignInButton />
+          <NewAccountButton />
         </NavbarItem>
       </NavbarContent>
     </Navbar>

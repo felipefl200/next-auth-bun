@@ -1,4 +1,5 @@
 import "./globals.css";
+import "react-toastify/ReactToastify.min.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Providers } from "./providers";
@@ -6,7 +7,7 @@ import { Providers } from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Create Next App",
+  title: "App With NextAuth",
   description: "Next App - With NextAuth and Prisma",
 };
 
